@@ -76,6 +76,16 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/btn_save"
         android:layout_centerHorizontal="true"
-        android:text="Display Info" />
+        android:text="Display Info"
+        android:onClick="loadInfo"/>
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_save"
+        android:layout_alignStart="@+id/btn_save"
+        android:layout_below="@+id/btn_save"
+        android:layout_marginTop="46dp" />
 
 </RelativeLayout>
