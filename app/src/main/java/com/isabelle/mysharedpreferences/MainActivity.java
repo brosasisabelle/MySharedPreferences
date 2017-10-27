@@ -1,5 +1,6 @@
 package com.isabelle.mysharedpreferences;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btnSave = (Button) findViewById(R.id.btn_save);
         btnDisplay = (Button) findViewById(R.id.btn_display);
         tvDisplay = (TextView) findViewById(R.id.tv_display);
+        preferences = getPreferences(Context.MODE_PRIVATE);
     }
 
     public void saveInfo (View view) {
